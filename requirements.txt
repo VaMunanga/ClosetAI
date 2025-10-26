@@ -1,0 +1,23 @@
+# Core App Framework
+streamlit>=1.32.0
+
+# Image Handling (for loading/displaying remote images if needed)
+Pillow>=10.0.0
+
+# Data Manipulation (future scalability if you add outfit data, CSVs, etc.)
+pandas>=2.1.0
+
+# Visualization (optional for future analytics dashboard)
+matplotlib>=3.8.0
+plotly>=5.18.0
+
+# Miscellaneous
+requests>=2.31.0
+
+| Library                 | Purpose                                                                                  |
+| ----------------------- | ---------------------------------------------------------------------------------------- |
+| **streamlit**           | The main framework for creating the interactive dashboard UI.                            |
+| **Pillow**              | Handles image operations — useful if you later process or resize uploaded outfit images. |
+| **pandas**              | Enables data handling for wardrobe items, resale analytics, or user outfit history.      |
+| **matplotlib / plotly** | Allows integration of fashion analytics or visual summaries later.                       |
+| **requests**            | Enables fetching external data or images (e.g., AI outfit suggestions from an API).      |
