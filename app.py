@@ -1,18 +1,18 @@
 import streamlit as st
 
-# 🎨 Page Configuration - This MUST be first Streamlit command
+# Page Configuration - This MUST be first Streamlit command
 st.set_page_config(
     page_title="ClosetAI Dashboard",  # Browser tab title
-    page_icon="👗",                    # Browser tab icon
+    page_icon="::",                    # Browser tab icon
     layout="wide"                      # Use full width instead of narrow center
 )
 
-# 🎨 Custom CSS for beautiful styling
+# Custom CSS for beautiful styling
 st.markdown("""
     <style>
     /* Main title styling */
     .main-title {
-        font-size: 3rem;
+        font-size: 5rem; 
         font-weight: bold;
         color: #FF6B9D;
         text-align: center;
@@ -52,17 +52,13 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# 📊 EXPLANATION: st.markdown() with CSS
-# - unsafe_allow_html=True allows us to inject custom HTML/CSS
-# - This lets us style beyond Streamlit's defaults
-# - Professional apps always have custom styling!
 
-# 🎯 Header Section
+
+# Header Section
 st.markdown('<p class="main-title"> ClosetAI Dashboard</p>', unsafe_allow_html=True)
 st.markdown('<p class="subtitle">Your Smart Fashion Assistant</p>', unsafe_allow_html=True)
 
-# 📊 EXPLANATION: We're using HTML classes we defined in CSS above
-# This gives us precise control over appearance
+
 
 st.divider()  # Visual separator line
 
@@ -269,7 +265,7 @@ with tab3:
 
 st.divider()
 
-# 🎯 Quick Actions Section
+#Quick Actions Section
 st.subheader("⚡ Quick Actions")
 
 action_col1, action_col2, action_col3, action_col4 = st.columns(4)
@@ -290,8 +286,6 @@ with action_col4:
     if st.button("📊 View Analytics", use_container_width=True):
         st.info("Analytics feature coming soon!")
 
-# 📊 EXPLANATION: use_container_width=True makes buttons full width of column
-# Creates uniform, professional appearance!
 
 # Footer Section
 st.divider()
